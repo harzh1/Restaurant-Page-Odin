@@ -1,5 +1,5 @@
 function menuPage() {
-  const element = document.createElement("div");
+  const element = document.getElementById("content");
 
   //Header
   const header = document.createElement("header");
@@ -10,24 +10,45 @@ function menuPage() {
 
   //Beverages
   const beverages = document.createElement("div");
+  const h11 = document.createElement("h1");
+  h11.innerHTML = "BEVERAGES";
+  element.appendChild(h11);
+  beverages.id = "beverages";
+  beverages.classList.add("centered");
 
-  const dish = document.createElement("div");
-  dish.id = "dish";
+  const dish1 = document.createElement("div");
+  dish1.classList.add("dish");
   const h21 = document.createElement("h2");
   h21.textContent = "Honey Tea - $2";
-  const p1 = document.createElement("p");
-  p1.textContent =
+  const p11 = document.createElement("p");
+  p11.textContent =
     "A warm, sweet tea made with the highest quality honey and a bit of lemon to start your day off right!";
-  const dishImg = document.createElement("img");
-  dishImg.classList.add("dish-image");
-  dishImg.src = "../src/honey-tea.jpg";
-  dishImg.alt = "Honey Tea";
-  dish.appendChild(h21);
-  dish.appendChild(p1);
-  dish.appendChild(dishImg);
-  beverages.appendChild(dish);
+  const dishImg1 = document.createElement("img");
+  dishImg1.classList.add("dish-image");
+  dishImg1.src = "../src/honey-tea.jpg";
+  dishImg1.alt = "Honey Tea";
+  dish1.appendChild(h21);
+  dish1.appendChild(p11);
+  dish1.appendChild(dishImg1);
+  beverages.appendChild(dish1);
+
+  const dish2 = document.createElement("div");
+  dish2.classList.add("dish");
+  const h22 = document.createElement("h2");
+  h22.textContent = "Beary Tea - $3";
+  const p12 = document.createElement("p");
+  p12.textContent =
+    "A comforting, almost filling, tea that is infused with the flavors of several kinds of berries. Best served cold, but can be served hot on request.";
+  const dishImg2 = document.createElement("img");
+  dishImg2.classList.add("dish-image");
+  dishImg2.src = "../src/beary-tea.jpg";
+  dishImg2.alt = "Beary Tea";
+  dish2.appendChild(h22);
+  dish2.appendChild(p12);
+  dish2.appendChild(dishImg2);
+  beverages.appendChild(dish2);
+
   element.appendChild(beverages);
-  return element;
 }
 
-export default menuPage();
+export default menuPage;

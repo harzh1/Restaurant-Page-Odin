@@ -34,4 +34,4 @@ function loadHomePage() {
   contentDiv.appendChild(welcomeSection);
 }
 
-export default loadHomePage();
+export default loadHomePage;

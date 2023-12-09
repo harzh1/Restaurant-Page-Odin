@@ -25,7 +25,7 @@ function menuPage() {
     "A warm, sweet tea made with the highest quality honey and a bit of lemon to start your day off right!";
   const dishImg1 = document.createElement("img");
   dishImg1.classList.add("dish-image");
-  dishImg1.src = "../src/honey-tea.jpg";
+  dishImg1.src = "../dist/honey-tea.jpg";
   dishImg1.alt = "Honey Tea";
   dish1.appendChild(h21);
   dish1.appendChild(p11);
@@ -41,7 +41,7 @@ function menuPage() {
     "A comforting, almost filling, tea that is infused with the flavors of several kinds of berries. Best served cold, but can be served hot on request.";
   const dishImg2 = document.createElement("img");
   dishImg2.classList.add("dish-image");
-  dishImg2.src = "../src/beary-tea.jpg";
+  dishImg2.src = "../dist/beary-tea.jpg";
   dishImg2.alt = "Beary Tea";
   dish2.appendChild(h22);
   dish2.appendChild(p12);

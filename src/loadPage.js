@@ -1,3 +1,5 @@
+import restaurantImage from "../dist/restaurant_img.jpg";
+
 function loadHomePage() {
   const contentDiv = document.getElementById("content");
 
@@ -12,7 +14,7 @@ function loadHomePage() {
 
   const resImage = document.createElement("img");
   resImage.id = "restaurant-image";
-  resImage.src = "../dist/restaurant_img.jpg";
+  resImage.src = restaurantImage;
   resImage.alt = "Delicious Bites Restaurant Interior";
   contentDiv.appendChild(resImage);
 

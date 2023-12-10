@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loa
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction loadHomePage() {\r\n  const contentDiv = document.getElementById(\"content\");\r\n\r\n  //Header\r\n  const header = document.createElement(\"header\");\r\n  const h1 = document.createElement(\"h1\");\r\n  h1.innerHTML = \"Delicious Bites Restaurant\";\r\n  header.appendChild(h1);\r\n  contentDiv.appendChild(header);\r\n\r\n  //Image\r\n\r\n  const resImage = document.createElement(\"img\");\r\n  resImage.id = \"restaurant-image\";\r\n  resImage.src = \"../dist/restaurant_img.jpg\";\r\n  resImage.alt = \"Delicious Bites Restaurant Interior\";\r\n  contentDiv.appendChild(resImage);\r\n\r\n  //Welcome Section\r\n  const welcomeSection = document.createElement(\"section\");\r\n  welcomeSection.id = \"welcome-section\";\r\n  const h2 = document.createElement(\"h2\");\r\n  h2.innerHTML = \"Welcome to our Wonderful Restaurant!\";\r\n  const p1 = document.createElement(\"p\");\r\n  p1.textContent =\r\n    \"Indulge in a delightful culinary experience at Delicious Bites. Our chefs craft mouth-watering dishes using the finest ingredients, ensuring a memorable dining experience for every guest.\";\r\n  const p2 = document.createElement(\"p\");\r\n  p2.textContent =\r\n    \"Whether you're here for a casual meal, a celebration, or a special event, we guarantee exceptional service and flavors that will tantalize your taste buds.\";\r\n\r\n  welcomeSection.appendChild(h2);\r\n  welcomeSection.appendChild(p1);\r\n  welcomeSection.appendChild(p2);\r\n  contentDiv.appendChild(welcomeSection);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHomePage);\r\n\n\n//# sourceURL=webpack://restaurant-page-odin/./src/loadPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _dist_restaurant_img_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dist/restaurant_img.jpg */ \"./dist/restaurant_img.jpg\");\n\r\n\r\nfunction loadHomePage() {\r\n  const contentDiv = document.getElementById(\"content\");\r\n\r\n  //Header\r\n  const header = document.createElement(\"header\");\r\n  const h1 = document.createElement(\"h1\");\r\n  h1.innerHTML = \"Delicious Bites Restaurant\";\r\n  header.appendChild(h1);\r\n  contentDiv.appendChild(header);\r\n\r\n  //Image\r\n\r\n  const resImage = document.createElement(\"img\");\r\n  resImage.id = \"restaurant-image\";\r\n  resImage.src = _dist_restaurant_img_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n  resImage.alt = \"Delicious Bites Restaurant Interior\";\r\n  contentDiv.appendChild(resImage);\r\n\r\n  //Welcome Section\r\n  const welcomeSection = document.createElement(\"section\");\r\n  welcomeSection.id = \"welcome-section\";\r\n  const h2 = document.createElement(\"h2\");\r\n  h2.innerHTML = \"Welcome to our Wonderful Restaurant!\";\r\n  const p1 = document.createElement(\"p\");\r\n  p1.textContent =\r\n    \"Indulge in a delightful culinary experience at Delicious Bites. Our chefs craft mouth-watering dishes using the finest ingredients, ensuring a memorable dining experience for every guest.\";\r\n  const p2 = document.createElement(\"p\");\r\n  p2.textContent =\r\n    \"Whether you're here for a casual meal, a celebration, or a special event, we guarantee exceptional service and flavors that will tantalize your taste buds.\";\r\n\r\n  welcomeSection.appendChild(h2);\r\n  welcomeSection.appendChild(p1);\r\n  welcomeSection.appendChild(p2);\r\n  contentDiv.appendChild(welcomeSection);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHomePage);\r\n\n\n//# sourceURL=webpack://restaurant-page-odin/./src/loadPage.js?");
 
 /***/ }),
 
@@ -136,7 +136,37 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction menuPage() {\r\n  const element = document.getElementById(\"content\");\r\n\r\n  //Header\r\n  const header = document.createElement(\"header\");\r\n  const h1 = document.createElement(\"h1\");\r\n  h1.innerHTML = \"MENU\";\r\n  header.appendChild(h1);\r\n  element.appendChild(header);\r\n\r\n  //Beverages\r\n  const beverages = document.createElement(\"div\");\r\n  const h11 = document.createElement(\"h1\");\r\n  h11.innerHTML = \"BEVERAGES\";\r\n  element.appendChild(h11);\r\n  beverages.id = \"beverages\";\r\n  beverages.classList.add(\"centered\");\r\n\r\n  const dish1 = document.createElement(\"div\");\r\n  dish1.classList.add(\"dish\");\r\n  const h21 = document.createElement(\"h2\");\r\n  h21.textContent = \"Honey Tea - $2\";\r\n  const p11 = document.createElement(\"p\");\r\n  p11.textContent =\r\n    \"A warm, sweet tea made with the highest quality honey and a bit of lemon to start your day off right!\";\r\n  const dishImg1 = document.createElement(\"img\");\r\n  dishImg1.classList.add(\"dish-image\");\r\n  dishImg1.src = \"../dist/honey-tea.jpg\";\r\n  dishImg1.alt = \"Honey Tea\";\r\n  dish1.appendChild(h21);\r\n  dish1.appendChild(p11);\r\n  dish1.appendChild(dishImg1);\r\n  beverages.appendChild(dish1);\r\n\r\n  const dish2 = document.createElement(\"div\");\r\n  dish2.classList.add(\"dish\");\r\n  const h22 = document.createElement(\"h2\");\r\n  h22.textContent = \"Beary Tea - $3\";\r\n  const p12 = document.createElement(\"p\");\r\n  p12.textContent =\r\n    \"A comforting, almost filling, tea that is infused with the flavors of several kinds of berries. Best served cold, but can be served hot on request.\";\r\n  const dishImg2 = document.createElement(\"img\");\r\n  dishImg2.classList.add(\"dish-image\");\r\n  dishImg2.src = \"../dist/beary-tea.jpg\";\r\n  dishImg2.alt = \"Beary Tea\";\r\n  dish2.appendChild(h22);\r\n  dish2.appendChild(p12);\r\n  dish2.appendChild(dishImg2);\r\n  beverages.appendChild(dish2);\r\n\r\n  element.appendChild(beverages);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuPage);\r\n\n\n//# sourceURL=webpack://restaurant-page-odin/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _dist_honey_tea_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dist/honey-tea.jpg */ \"./dist/honey-tea.jpg\");\n/* harmony import */ var _dist_beary_tea_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dist/beary-tea.jpg */ \"./dist/beary-tea.jpg\");\n\r\n\r\n\r\nfunction menuPage() {\r\n  const element = document.getElementById(\"content\");\r\n\r\n  //Header\r\n  const header = document.createElement(\"header\");\r\n  const h1 = document.createElement(\"h1\");\r\n  h1.innerHTML = \"MENU\";\r\n  header.appendChild(h1);\r\n  element.appendChild(header);\r\n\r\n  //Beverages\r\n  const beverages = document.createElement(\"div\");\r\n  const h11 = document.createElement(\"h1\");\r\n  h11.innerHTML = \"BEVERAGES\";\r\n  element.appendChild(h11);\r\n  beverages.id = \"beverages\";\r\n  beverages.classList.add(\"centered\");\r\n\r\n  const dish1 = document.createElement(\"div\");\r\n  dish1.classList.add(\"dish\");\r\n  const h21 = document.createElement(\"h2\");\r\n  h21.textContent = \"Honey Tea - $2\";\r\n  const p11 = document.createElement(\"p\");\r\n  p11.textContent =\r\n    \"A warm, sweet tea made with the highest quality honey and a bit of lemon to start your day off right!\";\r\n  const dishImg1 = document.createElement(\"img\");\r\n  dishImg1.classList.add(\"dish-image\");\r\n  dishImg1.src = _dist_honey_tea_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n  dishImg1.alt = \"Honey Tea\";\r\n  dish1.appendChild(h21);\r\n  dish1.appendChild(p11);\r\n  dish1.appendChild(dishImg1);\r\n  beverages.appendChild(dish1);\r\n\r\n  const dish2 = document.createElement(\"div\");\r\n  dish2.classList.add(\"dish\");\r\n  const h22 = document.createElement(\"h2\");\r\n  h22.textContent = \"Beary Tea - $3\";\r\n  const p12 = document.createElement(\"p\");\r\n  p12.textContent =\r\n    \"A comforting, almost filling, tea that is infused with the flavors of several kinds of berries. Best served cold, but can be served hot on request.\";\r\n  const dishImg2 = document.createElement(\"img\");\r\n  dishImg2.classList.add(\"dish-image\");\r\n  dishImg2.src = _dist_beary_tea_jpg__WEBPACK_IMPORTED_MODULE_1__;\r\n  dishImg2.alt = \"Beary Tea\";\r\n  dish2.appendChild(h22);\r\n  dish2.appendChild(p12);\r\n  dish2.appendChild(dishImg2);\r\n  beverages.appendChild(dish2);\r\n\r\n  element.appendChild(beverages);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuPage);\r\n\n\n//# sourceURL=webpack://restaurant-page-odin/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./dist/beary-tea.jpg":
+/*!****************************!*\
+  !*** ./dist/beary-tea.jpg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4fe4a08ad0d76ed4ee34.jpg\";\n\n//# sourceURL=webpack://restaurant-page-odin/./dist/beary-tea.jpg?");
+
+/***/ }),
+
+/***/ "./dist/honey-tea.jpg":
+/*!****************************!*\
+  !*** ./dist/honey-tea.jpg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ec06af153a7ec747954f.jpg\";\n\n//# sourceURL=webpack://restaurant-page-odin/./dist/honey-tea.jpg?");
+
+/***/ }),
+
+/***/ "./dist/restaurant_img.jpg":
+/*!*********************************!*\
+  !*** ./dist/restaurant_img.jpg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9bf942098259d1c2450a.jpg\";\n\n//# sourceURL=webpack://restaurant-page-odin/./dist/restaurant_img.jpg?");
 
 /***/ })
 
@@ -191,6 +221,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -205,6 +247,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
